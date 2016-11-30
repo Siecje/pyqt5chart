@@ -1,7 +1,8 @@
 import sys
 
-from PyQt5 import QtCore, QtGui, QtQml
+from PyQt5 import QtQml
+from PyQt5.QtWidgets import QApplication
 
-app = QtGui.QGuiApplication(sys.argv)
+app = QApplication(sys.argv)
 engine = QtQml.QQmlApplicationEngine("example.qml")
 app.exec_()
